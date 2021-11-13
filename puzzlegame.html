@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GHÉP ẢNH</title>
+</head>
+<body>
+<div><img src="ảnh/cat1_part1.jpg" alt="cat" id="image1" onclick="changeImg1()" height="80" width="400"/></div>
+<div><img src="ảnh/monkey_part2.jpg" alt="monkey" id="image2" onclick="changeImg2()" height="80" width="400"/></div>
+<div><img src="ảnh/panda_part3.jpg" alt="panda" id="image3" onclick="changeImg3()" height="80" width="400"/></div>
+<div><img src="ảnh/cat1_part4.jpg" alt="cat" id="image4" onclick="changeImg4()" height="80" width="400"/></div>
+<div><img src="ảnh/monkey_part5.jpg" alt="monkey" id="image5" onclick="changeImg5()" height="80" width="400"/></div>
+</body>
+
+<script>
+    function changeImg1() {
+        let img1 = document.getElementById("image1")
+        if (img1.alt === "cat") {
+            img1.src = "ảnh/monkey_part1.jpg"
+            img1.alt = "monkey"
+        } else if (img1.alt === "monkey") {
+            img1.src = "ảnh/panda_part1.jpg"
+            img1.alt = "panda"
+        } else {
+            img1.src = "ảnh/cat1_part1.jpg"
+            img1.alt = "cat"
+        }
+        checkWin()
+    }
+
+    function changeImg2() {
+        let img2 = document.getElementById("image2")
+        if (img2.alt === "cat") {
+            img2.src = "ảnh/monkey_part2.jpg"
+            img2.alt = "monkey"
+        } else if (img2.alt === "monkey") {
+            img2.src = "ảnh/panda_part2.jpg"
+            img2.alt = "panda"
+        } else {
+            img2.src = "ảnh/cat1_part2.jpg"
+            img2.alt = "cat"
+        }
+        checkWin()
+    }
+
+    function changeImg3() {
+        let img3 = document.getElementById("image3")
+        if (img3.alt === "cat") {
+            img3.src = "ảnh/monkey_part3.jpg"
+            img3.alt = "monkey"
+        } else if (img3.alt === "monkey") {
+            img3.src = "ảnh/panda_part3.jpg"
+            img3.alt = "panda"
+        } else {
+            img3.src = "ảnh/cat1_part3.jpg"
+            img3.alt = "cat"
+        }
+        checkWin()
+    }
+
+    function changeImg4() {
+        let img4 = document.getElementById("image4")
+        if (img4.alt === "cat") {
+            img4.src = "ảnh/monkey_part4.jpg"
+            img4.alt = "monkey"
+        } else if (img4.alt === "monkey") {
+            img4.src = "ảnh/panda_part4.jpg"
+            img4.alt = "panda"
+        } else {
+            img4.src = "ảnh/cat1_part4.jpg"
+            img4.alt = "cat"
+        }
+        checkWin()
+    }
+
+    function changeImg5() {
+        let img5 = document.getElementById("image5")
+        if (img5.alt === "cat") {
+            img5.src = "ảnh/monkey_part5.jpg"
+            img5.alt = "monkey"
+        } else if (img5.alt === "monkey") {
+            img5.src = "ảnh/panda_part5.jpg"
+            img5.alt = "panda"
+        } else {
+            img5.src = "ảnh/cat1_part5.jpg"
+            img5.alt = "cat"
+        }
+        checkWin()
+    }
+</script>
+</html>
